@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Program Files (x86)/AndroidTool/AndroidProject/AndroidStudyProject/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.166" />
+        <entry key="..\:/Program Files (x86)/AndroidTool/AndroidProject/AndroidStudyProject/app/src/main/res/drawable/ic_find_24_gray.xml" value="0.166" />
+        <entry key="..\:/Program Files (x86)/AndroidTool/AndroidProject/AndroidStudyProject/app/src/main/res/drawable/ic_find_24_green.xml" value="0.166" />
+        <entry key="..\:/Program Files (x86)/AndroidTool/AndroidProject/AndroidStudyProject/app/src/main/res/drawable/ic_home_gray_24.xml" value="0.166" />
+        <entry key="..\:/Program Files (x86)/AndroidTool/AndroidProject/AndroidStudyProject/app/src/main/res/drawable/ic_home_green_24.xml" value="0.166" />
+        <entry key="..\:/Program Files (x86)/AndroidTool/AndroidProject/AndroidStudyProject/app/src/main/res/drawable/ic_mine_24_gray.xml" value="0.166" />
+        <entry key="..\:/Program Files (x86)/AndroidTool/AndroidProject/AndroidStudyProject/app/src/main/res/drawable/ic_mine_24_green.xml" value="0.166" />
+        <entry key="..\:/Program Files (x86)/AndroidTool/AndroidProject/AndroidStudyProject/app/src/main/res/drawable/selector_bg_find.xml" value="0.166" />
+        <entry key="..\:/Program Files (x86)/AndroidTool/AndroidProject/AndroidStudyProject/app/src/main/res/drawable/selector_bg_home.xml" value="0.166" />
+        <entry key="..\:/Program Files (x86)/AndroidTool/AndroidProject/AndroidStudyProject/app/src/main/res/layout/activity_main.xml" value="0.5088967971530249" />
+        <entry key="..\:/Program Files (x86)/AndroidTool/AndroidProject/AndroidStudyProject/app/src/main/res/layout/activity_vpfragment_bottom.xml" value="0.286231884057971" />
+        <entry key="..\:/Program Files (x86)/AndroidTool/AndroidProject/AndroidStudyProject/app/src/main/res/layout/bottom_nav_layout.xml" value="0.286231884057971" />
+        <entry key="..\:/Program Files (x86)/AndroidTool/AndroidProject/AndroidStudyProject/app/src/main/res/layout/fragment_v_p.xml" value="0.286231884057971" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>
