@@ -10,6 +10,13 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AndroidStudyProject">
         <activity
+            android:name=".TransitionDrawableActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
             android:name=".VPFragment.VPFragmentBottomActivity"
             android:exported="false" />
         <activity

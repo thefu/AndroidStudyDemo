@@ -16,4 +16,11 @@
         android:text="viewpager+fragement实现底部导航栏"
         android:textSize="20sp"/>
 
+    <Button
+        android:id="@+id/transition_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="两张图片渐变"
+        android:textSize="20sp" />
 </LinearLayout>
