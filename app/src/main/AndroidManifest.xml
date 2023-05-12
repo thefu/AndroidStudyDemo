@@ -10,21 +10,35 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AndroidStudyProject">
         <activity
-            android:name=".FragmentActivity"
+            android:name=".viewmodel.VmTestActivity"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
-            android:name=".FileActivity"
+            android:name=".mvptest.UserActivity"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
-            android:name=".TransitionDrawableActivity"
+            android:name=".fragmentTest.FragmentActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".fileTest.FileActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".transitionDrawable.TransitionDrawableActivity"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"

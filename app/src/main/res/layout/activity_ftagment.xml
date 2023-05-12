@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".FragmentActivity"
+    tools:context=".fragmentTest.FragmentActivity"
     android:orientation="vertical">
 
     <LinearLayout
@@ -18,7 +18,7 @@
 <!--            android:layout_width="match_parent"-->
 <!--            android:layout_height="match_parent"-->
 <!--            android:id="@+id/fragment"-->
-<!--            android:name="com.thefu.androidstudyproject.MyFragment" />-->
+<!--            android:name="com.thefu.androidstudyproject.fragmentTest.MyFragment" />-->
 
 
     </LinearLayout>

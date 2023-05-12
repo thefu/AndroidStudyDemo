@@ -1,10 +1,12 @@
-package com.thefu.androidstudyproject;
+package com.thefu.androidstudyproject.transitionDrawable;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.graphics.drawable.TransitionDrawable;
 import android.os.Bundle;
 import android.widget.ImageView;
+
+import com.thefu.androidstudyproject.R;
 
 public class TransitionDrawableActivity extends AppCompatActivity {
 
