@@ -13,7 +13,7 @@ class LifecycleActivity : AppCompatActivity() {
         setContentView(R.layout.activity_lifecycle)
 //        observer = MyObserver()
 
-        lifecycle.addObserver(MyObserver2())
+        lifecycle.addObserver(MyObserver2(lifecycle))
     }
 
     override fun onStart() {

@@ -17,6 +17,7 @@ class VmTestActivity : AppCompatActivity() {
     lateinit var clearBtn: Button
     lateinit var infoText: TextView
     lateinit var sp: SharedPreferences
+    lateinit var getUserBtn: Button
 
     @SuppressLint("MissingInflatedId")
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -33,6 +34,7 @@ class VmTestActivity : AppCompatActivity() {
         plusOneBtn = findViewById<Button>(R.id.plusOneBtn)
         clearBtn = findViewById<Button>(R.id.clearBtn)
         infoText = findViewById(R.id.infoText)
+        getUserBtn = findViewById(R.id.getUserBtn)
         plusOneBtn.setOnClickListener {
             viewModel.plusOne();
 //            refreshCounter()
@@ -41,10 +43,16 @@ class VmTestActivity : AppCompatActivity() {
             viewModel.clear()
 //            refreshCounter()
         }
+        getUserBtn.setOnClickListener {
+            val userId = (0..1000).random().toString()
+            viewModel.getUser(userId)
+        }
 
         //这样写，不用担心ViewModel的内部会不会开启线程执行耗时逻辑。不过需要注意的是，如果你需要在子线程中给LiveData设置数据，一定要调用postValue()方法，而不能使用setValue方法，否则会崩溃
         viewModel.counter.observe(this, Observer { count -> infoText.text = count.toString() })
 //        refreshCounter()
+
+        viewModel.user.observe(this, Observer { user -> infoText.text = user.firstName })
     }
 
     override fun onPause() {
