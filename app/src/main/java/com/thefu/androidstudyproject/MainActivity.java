@@ -13,6 +13,7 @@ import com.thefu.androidstudyproject.fileTest.FileActivity;
 import com.thefu.androidstudyproject.fragmentTest.FragmentActivity;
 import com.thefu.androidstudyproject.lifecycles.LifecycleActivity;
 import com.thefu.androidstudyproject.mvptest.UserActivity;
+import com.thefu.androidstudyproject.roomTest.RoomActivity;
 import com.thefu.androidstudyproject.transitionDrawable.TransitionDrawableActivity;
 import com.thefu.androidstudyproject.viewmodel.VmTestActivity;
 
@@ -25,6 +26,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private Button mvp_btn;
     private Button viewModel_btn;
     private Button lifecycle_btn;
+    private Button room_btn;
 
     @SuppressLint("MissingInflatedId")
     @Override
@@ -39,6 +41,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         mvp_btn = findViewById(R.id.mvp_btn);
         viewModel_btn = findViewById(R.id.viewModel_btn);
         lifecycle_btn = findViewById(R.id.lifecycle_btn);
+        room_btn = findViewById(R.id.room_btn);
 
         navigation_bar.setOnClickListener(this);
         transition_btn.setOnClickListener(this);
@@ -47,6 +50,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         mvp_btn.setOnClickListener(this);
         viewModel_btn.setOnClickListener(this);
         lifecycle_btn.setOnClickListener(this);
+        room_btn.setOnClickListener(this);
     }
 
     @Override
@@ -75,6 +79,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
             case R.id.lifecycle_btn:
                 intent = new Intent(this, LifecycleActivity.class);
+                break;
+            case R.id.room_btn:
+                intent = new Intent(this, RoomActivity.class);
                 break;
             default:
                 intent = new Intent();

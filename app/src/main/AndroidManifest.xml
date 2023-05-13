@@ -10,6 +10,13 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AndroidStudyProject">
         <activity
+            android:name=".roomTest.RoomActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
             android:name=".lifecycles.LifecycleActivity"
             android:exported="false">
             <meta-data
