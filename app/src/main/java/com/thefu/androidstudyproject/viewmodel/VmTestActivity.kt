@@ -7,6 +7,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
 import android.widget.TextView
+import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 import com.thefu.androidstudyproject.R
 
@@ -33,19 +34,22 @@ class VmTestActivity : AppCompatActivity() {
         clearBtn = findViewById<Button>(R.id.clearBtn)
         infoText = findViewById(R.id.infoText)
         plusOneBtn.setOnClickListener {
-            viewModel.counter++;
-            refreshCounter()
+            viewModel.plusOne();
+//            refreshCounter()
         }
         clearBtn.setOnClickListener {
-            viewModel.counter = 0
-            refreshCounter()
+            viewModel.clear()
+//            refreshCounter()
         }
-        refreshCounter()
+
+        //这样写，不用担心ViewModel的内部会不会开启线程执行耗时逻辑。不过需要注意的是，如果你需要在子线程中给LiveData设置数据，一定要调用postValue()方法，而不能使用setValue方法，否则会崩溃
+        viewModel.counter.observe(this, Observer { count -> infoText.text = count.toString() })
+//        refreshCounter()
     }
 
     override fun onPause() {
         super.onPause()
-        sp.edit().putInt("count_reserved", viewModel.counter)
+        viewModel.counter.value?.let { sp.edit().putInt("count_reserved", it) }
     }
 
     //这里绝对不可以直接去创建ViewModel的实例，而是一定要通过ViewModelProvider来获取ViewModel的实例
