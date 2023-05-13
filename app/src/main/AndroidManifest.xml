@@ -10,6 +10,13 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AndroidStudyProject">
         <activity
+            android:name=".lifecycles.LifecycleActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
             android:name=".viewmodel.VmTestActivity"
             android:exported="false">
             <meta-data
