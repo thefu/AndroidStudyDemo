@@ -52,6 +52,7 @@ apply plugin: 'kotlin-kapt'
 
 dependencies {
 
+    implementation 'androidx.work:work-runtime:2.8.1'
     implementation 'androidx.room:room-common:2.5.1'
     kapt 'androidx.room:room-compiler:2.5.1'
     implementation 'androidx.lifecycle:lifecycle-extensions:2.2.0'
